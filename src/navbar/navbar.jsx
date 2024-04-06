@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom" ;
+import thefirm from "../assets/thefirm.png"
 import { NavContainer, 
         NavLeftContainer,
         NavLeftSymContainer,
         NavRightContainer
     } from "./navbarstyle"
-import { Button } from "../mainstyle";    
+import { Button, Thefirm, } from "../mainstyle";    
     const Navbar = ()=> {
         return (
             <NavContainer> 
                 <NavLeftContainer>
                     <NavLeftSymContainer>
-                        <Link to="/" style={{textDecoration: "none", color:"black"}}>
-                        <h2>TheFirm</h2>
+                        <Link to="/">
+                        <Thefirm><div><img src={thefirm} alt="thefirm" /></div></Thefirm>
                         </Link>
                     </NavLeftSymContainer>
                 </NavLeftContainer>
@@ -33,14 +34,7 @@ import { Button } from "../mainstyle";
                 <Link to="/contact" style={{ textDecoration: "none", color: "black" }}>
                     <p>Contact-us</p> 
                 </Link> 
-                <Button style={{color:'white',
-                        fontFamily:'Nunito',
-                        fontSize:'18px',
-                        fontStyle:'normal',
-                        fontWeight:'700',
-                        lineHeight:'normal',
-                        letterSpacing:'0.9px'
-                        }}>Get in Touch</Button>
+                <Button $home><h4>Get in Touch</h4> </Button>
                 </NavRightContainer>
                 
             </NavContainer>

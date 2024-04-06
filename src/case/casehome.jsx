@@ -5,12 +5,15 @@ import {
   Caseright,
   Caseleft,
   Button,
+  Center,
+  
 } from "../mainstyle"
 import Case2 from './case2';
 
 const CaseComponent = () => {
   return (
-    <>
+  <>
+  
    <Case>
     <Caseleft>
       <div>
@@ -21,14 +24,18 @@ const CaseComponent = () => {
             and typesetting industry. Lorem Ipsum has been <br />
           the industry's standard dummy.</p>
           </div>
-        <Button $asosiy style={{marginLeft:'150px',color:'white'}}>
-          Get in Touch 
-        </Button>
+          <Center>
+            <Button $home>
+             <h4> Get in Touch </h4>
+            </Button>
+        </Center>
     </Caseleft>
     <Caseright><img src={mainpage} alt="main-img" /></Caseright>
    </Case>
+    
   <Case2 />
   </>
+
   )
 }
 
